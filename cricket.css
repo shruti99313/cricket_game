@@ -1,0 +1,9 @@
+.button_container{display:flex; }
+
+
+#button_1{ justify-content: center;
+padding: 0px 2px; background-color: rgb(204, 196, 196); }
+#button_2{ justify-content: center;
+    padding: 0px 2px; background-color: rgb(204, 196, 196);}
+    #button_3{ justify-content: center;
+        padding: 0px 2px; background-color: rgb(204, 196, 196);}

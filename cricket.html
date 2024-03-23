@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cricket Game</title>
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <button onclick=" computerChoice = generateComputerChoice();
+  resultmsg= getResult('bat',computerChoice);
+  showresult('bat', 'computerChoice','resulMsg');
+  ">Bat</button>
+
+
+  <button onclick=" computerChoice=
+    generateComputerChoice();
+    resultMsg= getResult('ball',computerChoice);
+    showResult('ball','computerChoice','resultMsg');
+
+  ">Ball</button>
+
+  <button onclick=" computerChoice =  generateComputerChoice();
+resultMsg('stump','computerChoice','resultMsg');
+showResult('stump','computerChoice','resultMsg');
+   ">Stump</button>
+  <script> 
+  let computerChoice;
+  function generateComputerChoice(){
+     //This will generate random number between 0 and 3
+  let randomNumber = Math.random() * 3;
+  let computerChoice;
+  if (randomNumber > 0 && randomNumber <= 1) {
+    return 'Bat';
+    // console.log('computer choice is Bat');
+  } else if (randomNumber > 1 && randomNumber <= 2) {
+  return 'Ball';
+    // console.log('computer choice is Ball');
+  } else {
+  return 'Stump'
+    // console.log('computer choice is Stump');
+  }
+ } function getResult(userMove,computerMove) {
+  if(userMove=== 'bat'){
+    if (computerMove ==== 'ball') {
+      return 'user won.';}
+      else if{
+        (computerMove === 'bat') {
+          return 'its a tie.';
+        } else if{ 
+          (computerChoice === 'stump'){
+            return 'computer Won.'
+          }
+        }
+      }
+
+
+    
+  
+
+  
+  
+  function showResult(computermove , usermove,result){
+    alert('you have choosen ${userMove}. computer choice is ${computermove} and ${result}');
+  }
+  </script>
+</body>
+</html>
